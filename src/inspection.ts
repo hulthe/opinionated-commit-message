@@ -49,8 +49,8 @@ function splitSubjectBody(lines: string[]): MaybeSubjectBody {
   return result;
 }
 
-const allLettersRe = new RegExp('^[a-zA-Z][a-zA-Z-]+$');
-const firstWordBeforeSpaceRe = new RegExp('^([a-zA-Z][a-zA-Z-]+)\\s');
+const allLettersRe = new RegExp('^[a-zA-Z][a-zA-Z-\']+$');
+const firstWordBeforeSpaceRe = new RegExp('^([a-zA-Z][a-zA-Z-\']+)\\s');
 const suffixHashCodeRe = new RegExp('\\s?\\(\\s*#[a-zA-Z_0-9]+\\s*\\)$');
 
 function extractFirstWord(text: string): string | null {

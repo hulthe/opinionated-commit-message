@@ -262,6 +262,8 @@ export const SET = new Set([
   'do',
   'document',
   'dominate',
+  'don\'t',
+  'dont',
   'downgrade',
   'download',
   'draw',
